@@ -19,10 +19,10 @@ app.use(helmet())
 
 app.get('/retrieveRandom', async (req, res) => {
     try {
-        const userIndex = RandomIndex(1, data.data.length)
+        const userIndex = RandomIndex(1, data.users.length)
         res.json({
             success: true,
-            user: data.data[userIndex]
+            user: data.users[userIndex]
         })
     } catch (err) {
         console.log(err)
