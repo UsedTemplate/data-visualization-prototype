@@ -11,8 +11,6 @@
 </head>
 
 <body class="bg-gray-100">
-
-    <!-- Hero Section -->
     <div class="grid grid-cols-1 md:grid-cols-2 min-h-[70vh] w-full bg-cover bg-center relative opacity-70 bg-overlay"
          style="background-image: url('headerBG2.jpg')">
         <div class="z-10 flex justify-center items-center px-4 sm:px-8 md:px-16">
@@ -37,42 +35,30 @@
             </svg>
         </a>
     </div>
-
-    <!-- Steps Section -->
     <div id="next-section" class="mt-16 px-4 sm:px-8">
         <h1 class="flex justify-center text-3xl sm:text-4xl md:text-5xl font-bold">Zo werkt het</h1>
         <p class="flex text-base sm:text-lg md:text-xl justify-center text-[#8E8E8E]">
             In drie eenvoudige stappen naar jouw eigen avontuur
         </p>
     </div>
-
-    <!-- Cards Section -->
     <div class="pt-12 p-4">
         <div class="mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
-            <!-- Card 1 -->
             <div class="rounded-xl bg-white p-8 md:p-10 text-center hover:shadow-xl hover:scale-[1.02] transition duration-400">
                 <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-sky-500 shadow-sky-500/40 shadow-lg bg-linear-to-r from-[#4BE1FF] to-[#1CB0EA]">
-                    <!-- SVG -->
                 </div>
                 <h1 class="text-sky-500 mb-3 text-3xl font-bold pt-3">01</h1>
                 <h2 class="text-2xl font-semibold pb-2">Vul je gegevens in</h2>
                 <p class="px-4 text-gray-500">Deel je gezondheidsgegevens veilig en anoniem. Van fysieke conditie tot leefstijl</p>
             </div>
-
-            <!-- Card 2 -->
             <div class="rounded-xl bg-white p-8 md:p-10 text-center hover:shadow-xl hover:scale-[1.02] transition duration-400">
                 <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full shadow-lg bg-sky-500 shadow-sky-500/40 bg-linear-to-r from-[#4BE1FF] to-[#1CB0EA]">
-                    <!-- SVG -->
                 </div>
                 <h1 class="text-sky-500 mb-3 text-3xl font-bold pt-3">02</h1>
                 <h2 class="text-2xl font-semibold pb-2">Vergelijk met anderen</h2>
                 <p class="px-4 text-gray-500">Zie hoe jouw gezondheid zich verhoudt tot duizenden anderen in jouw leeftijdsgroep</p>
             </div>
-
-            <!-- Card 3 -->
             <div class="rounded-xl bg-white p-8 md:p-10 text-center hover:shadow-xl hover:scale-[1.02] transition duration-400">
                 <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full shadow-lg bg-sky-500 shadow-sky-500/40 bg-linear-to-r from-[#4BE1FF] to-[#1CB0EA]">
-                    <!-- SVG -->
                 </div>
                 <h1 class="text-sky-500 pt-3 text-3xl font-bold">03</h1>
                 <h2 class="text-2xl font-semibold pb-2">Ontdek je wereld</h2>
@@ -80,8 +66,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Form Section -->
     <div class="relative w-full flex items-center justify-center py-16 bg-gray-100">
         <form method="POST" action="submit.php"
               class="form-container rounded-lg p-6 sm:p-8 md:p-12 lg:p-16 w-full max-w-4xl flex flex-col justify-center bg-white">
@@ -92,19 +76,16 @@
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
-                    <!-- Age -->
                     <div class="flex flex-col items-start">
                         <label for="Leeftijd" class="mb-1 text-gray-700"><i class="fas fa-clock mr-2 text-[#0085CD]"></i>Leeftijd</label>
                         <input id="Leeftijd" name="Leeftijd" type="number" required min="0" max="120" placeholder="Uw leeftijd"
                                class="border border-gray-400 text-black bg-white px-2 py-2 rounded-lg w-full focus:border-black focus:outline-none hover:border-gray-600 transition-all duration-150" />
                     </div>
-                    <!-- Height -->
                     <div class="flex flex-col items-start">
                         <label for="Lengte" class="mb-1 text-gray-700"><i class="fas fa-ruler-vertical mr-2 text-[#0085CD]"></i>Lengte (cm)</label>
                         <input id="Lengte" name="Lengte" type="number" required min="50" max="250" placeholder="Uw lengte"
                                class="border border-gray-400 text-black bg-white px-2 py-2 rounded-lg w-full focus:border-black focus:outline-none hover:border-gray-600 transition-all duration-150" />
                     </div>
-                    <!-- Gender -->
                     <div class="flex flex-col items-start">
                         <label for="Gender" class="mb-1 text-gray-700"><i class="fas fa-venus-mars mr-2 text-[#0085CD]"></i>Gender</label>
                         <select id="Gender" name="Gender" required
@@ -114,13 +95,11 @@
                             <option value="vrouw">Vrouw</option>
                         </select>
                     </div>
-                    <!-- Gewicht -->
                     <div class="flex flex-col items-start">
                         <label for="Gewicht" class="mb-1 text-gray-700"><i class="fas fa-balance-scale mr-2 text-[#0085CD]"></i>Gewicht (kg)</label>
                         <input id="Gewicht" name="Gewicht" type="number" required min="20" max="300" placeholder="Uw gewicht"
                                class="border border-gray-400 text-black bg-white px-2 py-2 rounded-lg w-full focus:border-black focus:outline-none hover:border-gray-600 transition-all duration-150" />
                     </div>
-                    <!-- Depressief -->
                     <div class="flex flex-col items-start">
                         <label for="Depressief" class="mb-1 text-gray-700"><i class="fas fa-cloud-rain mr-2 text-[#0085CD]"></i>Heeft u depressie</label>
                         <select id="Depressief" name="Depressief" required
@@ -130,7 +109,6 @@
                             <option value="nee">Nee</option>
                         </select>
                     </div>
-                    <!-- Burnout -->
                     <div class="flex flex-col items-start">
                         <label for="Burnout" class="mb-1 text-gray-700"><i class="fas fa-fire mr-2 text-[#0085CD]"></i>Heeft u een burnout</label>
                         <select id="Burnout" name="Burnout" required
@@ -141,14 +119,11 @@
                         </select>
                     </div>
                 </div>
-
-                <!-- Alcohol -->
                 <div class="mt-6 flex flex-col items-start w-full">
                     <label for="Alcohol" class="mb-1 text-gray-700"><i class="fas fa-wine-glass mr-2 text-[#0085CD]"></i>Alcohol inname (aantal glazen per week)</label>
                     <input id="Alcohol" name="Alcohol" type="number" required placeholder="Aantal glazen per week"
                            class="border border-gray-400 text-black bg-white px-2 py-2 rounded-lg w-full focus:border-black focus:outline-none hover:border-gray-600 transition-all duration-150" />
                 </div>
-
                 <button type="submit"
                         class="mt-10 w-full py-3 text-white text-xl font-bold rounded-lg transform transition-all duration-150 hover:scale-[1.02] hover:shadow-md"
                         style="background: #00B7FF;">
@@ -157,8 +132,6 @@
             </div>
         </form>
     </div>
-
-    <!-- PHP Results Section -->
     <?php
     $db = new SQLite3('data.db');
     $lastUser = $db->query("SELECT * FROM users ORDER BY id DESC LIMIT 1")->fetchArray(SQLITE3_ASSOC);
